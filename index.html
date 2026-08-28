@@ -73,7 +73,7 @@
   /* 현재 시각 (실시간 시계) */
   #clock {
     position: fixed;
-    top: 16px;
+    bottom: 66px;
     right: 20px;
     z-index: 2;
     font-family: "Do Hyeon", "Jua", sans-serif;
@@ -86,11 +86,11 @@
     text-align: center;
     line-height: 1.15;
   }
-  #clock .now-label { font-size: 12px; color: var(--muted); letter-spacing: 1px; }
-  #clock .now-time { font-size: clamp(18px, 2.4vw, 26px); font-variant-numeric: tabular-nums; }
+  #clock .now-label { font-size: clamp(13px, 1.4vw, 16px); color: var(--muted); letter-spacing: 1px; }
+  #clock .now-time { font-size: clamp(30px, 4vw, 52px); font-variant-numeric: tabular-nums; }
   @media (max-width: 640px) {
-    #clock { top: 10px; right: 10px; padding: 6px 12px; }
-    #clock .now-time { font-size: 18px; }
+    #clock { bottom: 58px; right: 10px; padding: 6px 12px; }
+    #clock .now-time { font-size: 26px; }
   }
   body.dark #clock { background: var(--card); border-color: var(--line); }
 
